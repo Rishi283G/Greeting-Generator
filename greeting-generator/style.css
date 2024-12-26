@@ -1,0 +1,228 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container for the form and greeting */
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Heading and form styling */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff7e5f;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ff7e5f;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: transparent;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #feb47b;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ff7e5f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #feb47b;
+}
+
+/* Greeting message styling */
+.output {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    #ffe259,
+    #ffa751
+  ); /* Keep gradient for vibrant look */
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Cursive", sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+  text-align: center;
+  line-height: 1.6;
+  display: none;
+  animation: none; /* No fade effect in canvas version */
+}
+
+/* Greeting header style */
+.output h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Stronger shadow for contrast */
+}
+
+.output p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Fade-in animation for the screen version */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 25px;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .output h2 {
+    font-size: 1.8rem;
+  }
+  .output p {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .output h2 {
+    font-size: 1.6rem;
+  }
+  .output p {
+    font-size: 0.9rem;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+}
+
+/* Updated Styling */
+.output {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    #ffe259,
+    #ffa751
+  ); /* Keep gradient for vibrant look */
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Cursive", sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+  text-align: center;
+  line-height: 1.6;
+  display: none;
+  animation: none;
+}
+
+/*  opacity*/
+.output h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  /* Stronger shadow for contrast */
+}
+
+.output p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Fade-in animation*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* header style */
+.output h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.output p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Fade-in  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
